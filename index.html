@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Bedriftens Navn</title>
+    <script>
+        // Detection logic
+        const lang = navigator.language || navigator.userLanguage;
+        // If English is detected, go to /en/, otherwise default to Norwegian /no/
+        if (lang.startsWith('en')) {
+            window.location.href = "/en/";
+        } else {
+            window.location.href = "/no/";
+        }
+    </script>
+</head>
+<body>
+    <p>Sender deg videre... / Redirecting...</p>
+    <p><a href="/no/">Norsk</a> | <a href="/en/">English</a></p>
+</body>
+</html>
