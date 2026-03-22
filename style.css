@@ -127,25 +127,17 @@ header {
 
 .contact-details {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    justify-content: center; /* Centers the email horizontally */
+    align-items: center;
+    gap: 0; /* No gap needed for a single item */
+    flex-direction: column;
 }
 
-.contact-item span {
-    display: block;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.contact-item {
+    text-align: center;
 }
 
-.contact-item a, .contact-item p {
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
+
 
 footer {
     padding: 4rem 5%;
