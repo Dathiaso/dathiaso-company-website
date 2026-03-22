@@ -1,0 +1,34 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A6FE8"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="150" fill="#ffffff"/>
+
+  <!-- All caps, mixed bold/light alternating letters for creativity -->
+  <text x="200" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="0" fill="url(#textGrad)">
+
+    <!-- D - bold -->
+    <tspan font-size="52" font-weight="700" fill="#1A6FE8">D</tspan>
+    <!-- A - light -->
+    <tspan font-size="52" font-weight="300" fill="#60A5FA">A</tspan>
+    <!-- T - bold -->
+    <tspan font-size="52" font-weight="700" fill="#1A6FE8">T</tspan>
+    <!-- H - light -->
+    <tspan font-size="52" font-weight="300" fill="#60A5FA">H</tspan>
+    <!-- I - bold -->
+    <tspan font-size="52" font-weight="700" fill="#1A6FE8">I</tspan>
+    <!-- A - light -->
+    <tspan font-size="52" font-weight="300" fill="#60A5FA">A</tspan>
+    <!-- S - bold -->
+    <tspan font-size="52" font-weight="700" fill="#1A6FE8">S</tspan>
+    <!-- O - light -->
+    <tspan font-size="52" font-weight="300" fill="#60A5FA">O</tspan>
+  </text>
+
+  <!-- Thin underline accent -->
+  <line x1="42" y1="110" x2="358" y2="110" stroke="#93C5FD" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
