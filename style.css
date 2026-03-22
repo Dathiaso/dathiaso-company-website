@@ -1,0 +1,155 @@
+/* 2026 Modern Design Variables */
+:root {
+    --bg: #ffffff;
+    --accent: #6366f1; /* Indigo */
+    --accent-soft: #e0e7ff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --glass: rgba(255, 255, 255, 0.7);
+    --card-bg: #f8fafc;
+    --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover { transform: scale(1.05); }
+
+.lang-switch {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    background: var(--accent-soft);
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.lang-switch:hover { background: var(--accent); color: white; }
+
+/* Hero Section */
+.hero {
+    padding: 8rem 5% 4rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #0f172a, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Modern Bento-Style Grid */
+.container { padding: 0 5% 8rem; max-width: 1200px; margin: 0 auto; }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.service-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover {
+    background: white;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border-color: var(--accent);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+/* Minimalist Contact Section */
+.contact-section {
+    background: var(--text-main);
+    color: white;
+    padding: 5rem 5%;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.contact-section h2 { font-size: 2.5rem; margin-bottom: 2rem; }
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-item span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.contact-item a, .contact-item p {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    padding: 4rem 5%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
