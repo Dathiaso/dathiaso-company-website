@@ -102,25 +102,6 @@ header {
     text-shadow: 0 1px 5px rgba(0,0,0,0.2);
 }
 
-photo-credit {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-size: 0.65rem;
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-    z-index: 2;
-}
-
-.photo-credit a {
-    color: inherit;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-}
-
-.photo-credit a:hover {
-    color: white;
-}
-
 /* Ensure credit doesn't overlap text on small mobile screens */
 @media (max-width: 600px) {
     .photo-credit {
