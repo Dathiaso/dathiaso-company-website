@@ -36,12 +36,21 @@ header {
 }
 
 .logo-img {
-    height: 40px;
+    /* Changed from 40px to 70px */
+    height: 70px; 
     width: auto;
+    display: block;
     transition: transform 0.3s ease;
 }
 
-.logo-img:hover { transform: scale(1.05); }
+/* Pro Tip: If the logo feels TOO big on a small phone, 
+   add this to keep it balanced for mobile users: 
+*/
+@media (max-width: 600px) {
+    .logo-img {
+        height: 50px; 
+    }
+}
 
 .lang-switch {
     text-decoration: none;
